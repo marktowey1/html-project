@@ -1,0 +1,10 @@
+HTML and CSS Assignment with flexbox and grid
+1. Create responsive landing page with html and css
+2. Create a github repo and push the code on github
+3. Use media queries for mobile reposiveness
+4. Use as much as flex and grid properties to design the page
+https://www.youtube.com/watch?v=9zBsdzdE4sM
+https://www.youtube.com/watch?v=fYq5PXgSsbE&t=2s
+
+Figma Link:
+https://www.figma.com/design/Oo6vDGlHs6MGx9T7ojnJo2/CharaEngine-Design?node-id=4-82&t=rQakTp777mUemu8h-0
