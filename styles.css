@@ -39,7 +39,7 @@ nav {
 }
 
 .What-is-CharaEngine{
-    background-color: red;
+    /* background-color: red; */
     margin: 0px 60px 60px 60px;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ h2{
 }
 
 .What-first-div div{
-    background-color: green;
+    /* background-color: green; */
     justify-content: space-between;
 }
 
@@ -93,6 +93,12 @@ h2{
     list-style-type: none;
 }
 
+.grid-container{
+    display:grid;
+    grid-template-columns: 100px, 100px;
+    grid-template-rows: 3, 1fr;
+}
+
 .What-third-div{
     display: flex;
     justify-content: center;
@@ -101,7 +107,7 @@ h2{
 }
 
 .What-third-div div{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
     max-width: 47.5%;
@@ -121,8 +127,25 @@ h2{
     margin: 0px 60px 60px 60px;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns: 100px, 100px;
-    grid-template-rows: 3, 1fr;
+.Studios-Players-Flex-Container{
+    display:flex;
+    justify-content: center;
+}
+
+.studios{
+    background-color: green;
+    max-width: 47.5%;
+    width: 47.5%;
+    margin-right: 2.5%;
+}
+
+.players{
+    background-color: red;
+    max-width: 47.5%;
+    width: 47.5%;
+    margin-left: 2.5%;
+}
+
+.Studios-Players-Flex-Container span{
+    display:block;
 }
