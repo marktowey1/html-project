@@ -10,7 +10,7 @@ nav {
 .Landing-page nav ul {
     display:flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .Intro-container{
@@ -30,8 +30,99 @@ nav {
     border-radius: 40%;
     color: #23A1FF;
     padding: 20px 50px;
+    border-radius: 25px;;
 }
 
 .Info-container{
     color: white;
+    overflow: auto;
+}
+
+.What-is-CharaEngine{
+    background-color: red;
+    margin: 0px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.What-is-CharaEngine div{
+    flex: 1;
+}
+
+.What-first-div{
+    
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.What-first-div div{
+    background-color: green;
+    justify-content: space-between;
+}
+
+.lightning-bolt-div{
+    background-color: #2A294580;
+}
+
+#red-text span{
+    color: #FFA1A1;
+}
+
+#green-text span{
+    color: #70DBC8;
+}
+
+.What-second-div{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.gaming-div{
+    background-color: #2A294580;
+}
+
+.gaming-div li{
+    list-style-type: none;
+}
+
+.What-third-div{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin-bottom: 20px;
+}
+
+.What-third-div div{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    max-width: 47.5%;
+}
+
+.What-third-div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    background-color: #186584;
+    border-radius: 25px;;
+}
+
+.Why-use-CharaEngine{
+    margin: 0px 60px 60px 60px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 100px, 100px;
+    grid-template-rows: 3, 1fr;
 }
