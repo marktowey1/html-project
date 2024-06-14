@@ -107,7 +107,7 @@ h2{
 }
 
 .What-third-div div{
-    /* background-color: blue; */
+    background-color: #2A294580;
     display: flex;
     align-items: center;
     max-width: 47.5%;
@@ -130,22 +130,41 @@ h2{
 .Studios-Players-Flex-Container{
     display:flex;
     justify-content: center;
+    overflow:hidden;
 }
 
 .studios{
-    background-color: green;
+    position: relative;
+    background-color: #2A294580;;
     max-width: 47.5%;
     width: 47.5%;
     margin-right: 2.5%;
+    overflow:hidden;
 }
 
 .players{
-    background-color: red;
+    position: relative;
+    background-color: #2A294580;
     max-width: 47.5%;
     width: 47.5%;
     margin-left: 2.5%;
+    overflow:hidden;
 }
 
 .Studios-Players-Flex-Container span{
     display:block;
+}
+
+.Studios-Players-Flex-Container img{
+    max-width: 100%;
+}
+
+#employee-image{
+    position: absolute;
+    bottom:0;
+} 
+
+.code-Employee-Images{
+    display: flex;
+    justify-content: flex-end;
 }
