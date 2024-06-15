@@ -1,5 +1,6 @@
 body{
     background-color: #050333;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 nav {
@@ -168,3 +169,29 @@ h2{
     display: flex;
     justify-content: flex-end;
 }
+
+
+.How-does-it-work{
+    margin: 0px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.How-container{
+    display:flex;
+    gap:5px;
+}
+
+.How-container div{
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #003E3E -16.17%, #00FEFF 48.5%, #003E3E 112.67%);
+    border-image-slice: 1; /* Ensures the gradient covers the entire border */
+    padding: 5px;
+    flex: 1;
+}
+
+
+
+
+
+
