@@ -3,6 +3,10 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
+button{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 nav {
     padding: 1px 10px;
     color: white;
@@ -68,10 +72,6 @@ h2{
     justify-content: space-between;
 }
 
-.lightning-bolt-div{
-    background-color: #2A294580;
-}
-
 #red-text span{
     color: #FFA1A1;
 }
@@ -86,8 +86,9 @@ h2{
     margin-bottom: 20px;
 }
 
-.gaming-div{
+.What-second-div div{
     background-color: #2A294580;
+    border-radius: 20px;
 }
 
 .gaming-div li{
@@ -112,6 +113,7 @@ h2{
     display: flex;
     align-items: center;
     max-width: 47.5%;
+    border-radius: 20px;
 }
 
 .What-third-div button{
@@ -141,6 +143,7 @@ h2{
     width: 47.5%;
     margin-right: 2.5%;
     overflow:hidden;
+    border-radius: 20px;
 }
 
 .players{
@@ -150,6 +153,7 @@ h2{
     width: 47.5%;
     margin-left: 2.5%;
     overflow:hidden;
+    border-radius: 20px;
 }
 
 .Studios-Players-Flex-Container span{
