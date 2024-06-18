@@ -1,18 +1,35 @@
 body{
     background-color: #050333;
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Landing-page{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button{
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
 }
 
 nav {
+    width: 100%;
     padding: 1px 10px;
     color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
 .Landing-page nav ul {
+    width: 100%;
     display:flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -26,25 +43,37 @@ nav {
 }
 
 .Intro-text{
+    max-width: 80%;
     color: white;
     position: absolute;
     text-align: center;
+    font-size: 30px;
+}
+
+.Intro-text span{
+    /* Gradient text styling */
+    background: linear-gradient(90deg, #9513FF 58.41%, #3E5AFF 76.22%, #00FEFF 100%); /* Define the gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .Intro-text button{
-    border-radius: 40%;
     color: #23A1FF;
     padding: 20px 50px;
     border-radius: 25px;;
+    font-size: 18px;
 }
 
 .Info-container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     overflow: auto;
 }
 
 .What-is-CharaEngine{
-    /* background-color: red; */
     margin: 0px 60px 60px 60px;
     display: flex;
     flex-direction: column;
@@ -52,6 +81,7 @@ nav {
 
 .What-is-CharaEngine div{
     flex: 1;
+    gap: 40px
 }
 
 .What-first-div{
@@ -127,13 +157,16 @@ h2{
 }
 
 .Why-use-CharaEngine{
+    width: 92.5%;
     margin: 0px 60px 60px 60px;
+    
 }
 
 .Studios-Players-Flex-Container{
     display:flex;
     justify-content: center;
     overflow:hidden;
+    width:100%;
 }
 
 .studios{
@@ -156,12 +189,26 @@ h2{
     border-radius: 20px;
 }
 
+.studios div{
+    line-height: 36px;
+    padding: 10px;
+}
+
+.players div{
+    line-height: 36px;
+    padding: 10px;
+}
+
 .Studios-Players-Flex-Container span{
     display:block;
 }
 
 .Studios-Players-Flex-Container img{
     max-width: 100%;
+}
+
+.Studios-Players-Flex-Container h3{
+    padding-left: 10px;
 }
 
 #employee-image{
@@ -186,12 +233,67 @@ h2{
     gap:5px;
 }
 
+.How-container h3{
+    color: #00FEFF;
+}
+
 .How-container div{
     border: 1px solid;
     border-image-source: linear-gradient(90deg, #003E3E -16.17%, #00FEFF 48.5%, #003E3E 112.67%);
     border-image-slice: 1; /* Ensures the gradient covers the entire border */
     padding: 5px;
     flex: 1;
+}
+
+.What-else-developing{
+    margin: 0px 60px 60px 60px;
+}
+
+.Developing-container{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+.Developing-container div{
+    flex:1;
+    padding: 5px;
+    line-height: 36px;
+}
+
+.Outside-border{
+    margin: 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.Middle-border{
+    margin: 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.Inside-border{
+    margin: 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.Inside-border div{
+    display: flex;
+    justify-content: center;
+}
+
+.Reach-out-to-us{
+    margin: 0px 60px 60px 60px;
+}
+
+.Reach-images-container{
+    margin: 0px 60px 60px 60px;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
 }
 
 
