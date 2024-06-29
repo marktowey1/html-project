@@ -20,17 +20,18 @@ button{
 }
 
 nav {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
     width: 100%;
     padding: 1px 10px;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
-    
 }
 
 .Landing-page nav ul {
     width: 100%;
     display:flex;
+    flex: 1 1;
     list-style-type: none;
     justify-content: space-evenly;
 }
@@ -72,6 +73,7 @@ nav {
     color: white;
     overflow: auto;
     padding-bottom: 4%;
+    overflow: hidden;
 }
 
 .What-is-CharaEngine{
@@ -262,21 +264,26 @@ h2{
     line-height: 36px;
 }
 
+.borders-section{
+    width: 100%;
+    margin: 0px 60px 60px 60px;
+}
+
 .Outside-border{
     margin: 30px;
-    border: 2px solid grey;
+    border: 3.35px solid #FFFFFF1A;
     border-radius: 20px;
 }
 
 .Middle-border{
     margin: 30px;
-    border: 2px solid grey;
+    border: 3.07px solid #FFFFFF33;
     border-radius: 20px;
 }
 
 .Inside-border{
     margin: 30px;
-    border: 2px solid grey;
+    border: 3.07px solid #FFFFFF33;
     border-radius: 20px;
     padding: 5px;
 }
@@ -286,48 +293,61 @@ h2{
     justify-content: center;
 }
 
-/* .Reach-out-to-us{
+.Inside-border p{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Reach-out-to-us{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px 60px 60px 60px;
-    width: 643px;
-    background-color: green;
-} */
-
-.last-section{
-    padding: 40px 40px 50px 40px;
-    max-width: 1440px;
-    width: 1440px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+    position: relative;
 }
 
-.form{
+.Reach-container{
+    position: relative;
+    z-index: 2; /* Ensure it is above the images */
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 50px 40px;
+    align-items: center; /* Center the form and social icons */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     border: 2px solid black;
     background-color: #1E1E2999;
     width: 40%;
+    padding: 40px 40px 50px 40px;
+}
+
+form *{
     box-sizing: border-box;
 }
 
-.form *{
-    box-sizing: border-box;
-}
-
-.form input{
+form input{
     border-radius: 20px;
     padding: 10px;
     width: 90%;
 }
 
-.form textarea{
+form textarea{
     border-radius: 20px;
     padding: 10px;
     width: 90%;
 }
 
-.form button{
+form button{
     color: #23A1FF;
     padding: 10px;
     border-radius: 20px; /* Large border radius for the pill shape */
@@ -335,22 +355,63 @@ h2{
     width: 90%;
 }
 
+.Reach-images-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure it is behind the reach container */
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to new lines */
+}
+
 .Reach-images-container{
     /* margin: 0px 60px 60px 60px; */
-    display:grid;
+    /* display:grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-gap: 20px; */
+}
+
+.Reach-images-container img {
+    flex: 1 1 auto; 
+    max-width: 100%;
+    height: auto; 
+    opacity: 0.5; 
 }
 
 .socials-container{
     display: flex;
+    justify-content: center;
     border-radius: 50px;
     width: 20%;
-    justify-content: center;
     justify-content: space-between;
     background-color: transparent;
 }
 
+@media (max-width: 1200px){
+    .Landing-page{
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Info-container{
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        overflow: auto;
+        padding-bottom: 4%;
+        overflow: hidden;
+    }
+
+    .Intro-container img{
+        width: 800px;
+    }
+}
 
 
 
